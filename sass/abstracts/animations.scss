@@ -1,0 +1,34 @@
+/*Animacion cards*/
+.border_item::before,
+.border_item::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border: 3px solid transparent;
+    transition: all 0.3s ease-in-out;
+    pointer-events: none;
+}
+.border_item::before {
+    border-top-color: $signature_color;
+    border-bottom-color: $signature_color;
+    transform: scaleX(0);
+}
+.border_item::after {
+    border-left-color: $signature_color;
+    border-right-color: $signature_color;
+    transform: scaleY(0);
+}
+.border_item:hover::before {
+    transform: scaleX(1);
+}
+.border_item:hover::after {
+    transform: scaleY(1);
+}
+.border_item .button {
+    position: relative;
+    z-index: 1;
+}
+/*Animacion cards*/

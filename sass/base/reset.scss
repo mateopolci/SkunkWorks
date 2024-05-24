@@ -1,0 +1,21 @@
+*{
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+}
+::selection{
+    background-color: $signature_white;
+    color: $signature_color;
+}
+a{
+    text-decoration: none;
+    color: $signature_black;
+}
+body{
+    font-family: "Montserrat", sans-serif;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+#exampleCheck1{
+    box-shadow:none;
+}

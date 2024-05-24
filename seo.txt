@@ -1,0 +1,11 @@
+Prácticas de Seo y performance aplicadas al proyecto:
+-Se añadieron textos alternativos a las imágenes para asegurar una mayor accesibilidad a todo el mundo, además de también añadir un "failsafe" en caso de que alguna imágen fallara al cargar.
+-Se añadieron títulos principales a las páginas las cuales no tenían para ayudar al motor de búsqueda a reconocer el contenido de las páginas.
+-Se respetó el orden jerárquico de los tipos de títulos (<h1> a <h6>) para mejorar la estructura del contenido.
+-Se añadieron meta keywords relacionadas con el contenido de cada una de las páginas, teniendo cuidado en que no se salgan de tema, reflen bien el contenido específico de la misma e intentando no repetir o copiar palabras en la (normal de lo posible) entre diferentes páginas para no ser penalizado por el algoritmo.
+-Se añadieron meta descriptions para cada una de las páginas para describir el contenido de cada una y ser así obtenido por los spider web.
+-Se añadieron algunas etiquetas <strong> a algunos html para llamar la atención de los motores a ciertas palabras o frases importantes del sitio web.
+-Se convirtieron todas las imágenes e íconos del proyecto de png y jpeg a webp.
+-Se comprimieron todas las imágenes e íconos del proyecto.
+-Se eliminaron todos los metadatos de los archivos usados en el proyecto.
+-(Con estos cambios, el proyecto pasó de pesar 612 MB a 371 MB. Es decir se redujo el tamaño del mismo un 40% aproximadamente)

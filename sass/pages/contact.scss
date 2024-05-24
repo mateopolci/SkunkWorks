@@ -1,0 +1,65 @@
+::placeholder{
+    color: black !important;
+}
+.contact_main{
+    background-color: $signature_black;
+    .contact_titles{
+        color: $signature_white;
+    }
+}
+.oldfashioned{
+    color: $signature_white;
+}
+.contact_titles{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 35px 0px 15px 0px;
+    text-align: center;
+}
+.iframe_map{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+    iframe{
+        width: 75%;
+    }
+}
+.mytextarea{
+    text-align: center;
+    color: $signature_white;
+}
+.form-select{
+    background-color: #0b0b0b;
+    color: $signature_white;
+}
+input{
+    color: $signature_white !important;
+}
+textarea{
+    color: $signature_white !important;
+}
+.form-control{
+    background-color: $signature_black;
+}
+.form-control:focus{
+    background-color: $signature_black;
+}
+input{
+    background-color: $signature_black !important;
+}
+.btn{
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 20px;
+    padding: 10px;
+}
+.oldfashioned{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    text-align: center;
+}
+input::placeholder{
+    color: grey !important;
+}

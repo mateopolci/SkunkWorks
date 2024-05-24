@@ -1,0 +1,65 @@
+footer{
+    background-color: $signature_color;
+    height: 72px;
+}
+.footer_info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    .myicons{
+        font-size: 40px;
+        margin-top: 5px;
+        a {
+            font-size: 0;
+            margin: 5px;
+        }
+        i {
+            font-size: 40px;
+        }
+    }
+}
+.adress{
+    text-align:end;
+    flex-grow: 1;
+    flex-basis: 0;
+    margin-right: 5px;
+}
+.copy{
+    flex-grow: 1;
+    flex-basis: 0;
+    margin-left: 5px;
+}
+.mycontainers{
+    width: fit-content;
+}
+.float{
+    transition: .5s, color .10s;
+    -webkit-transition: .5s, color .10s;
+    -moz-transition: .5s, color .10s;
+}
+.float:hover{
+    transform: translate(0px,-5px);
+    -webkit-transform: translate(0px,-5px);
+    -moz-transform:translate(0px,-5px);
+}
+@media (max-width: 980px){
+    .footer_info{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        .adress{
+            text-align: center;
+            display: flex;
+            align-items: end;
+        }
+        .copy{
+            display: flex;
+            align-items: end;
+        }
+    }
+    footer{
+        height: 170px;
+    }
+}

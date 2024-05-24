@@ -1,0 +1,15 @@
+.button{
+    width: fit-content;
+    text-decoration: none;
+    color: $signature_white;
+    padding: 5px;
+    background-color:$signature_color;
+    border: solid 1px;
+    border-color: $signature_white;
+    border-radius: 4px;
+    transition: all 0.2s;
+}
+.button:hover{
+    color: $signature_color;
+    background-color: $signature_white;
+}
