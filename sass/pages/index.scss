@@ -1,16 +1,6 @@
 .indexMain{
     overflow: visible;
 }
-@media (max-height: 1200px){
-    .hero{
-        height: fit-content !important;
-    }
-}
-@media (max-height: 1200px){
-    .hero{
-        height: calc(100vh - 70px);
-    }
-}
 .hero{
     display: flex;
     justify-content: start;
@@ -21,6 +11,7 @@
     video{
         z-index: -100;
         width: 100%;
+        height: fit-content;
     }
 }
 .content{
@@ -89,6 +80,16 @@
 }
 .indexBody{
     background-color: $signature_black;
+}
+@media (max-width: 1200px) {
+    .hero {
+        height: fit-content;
+    }
+}
+@media (min-width: 1200px) {
+    .hero {
+        height: calc(100vh - 70px);
+    }
 }
 @media (max-width:769px){
     .mycards{

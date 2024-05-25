@@ -62,10 +62,6 @@ main {
   color: #D4B170;
 }
 
-::scrollbar-thumb {
-  color: #D4B170;
-}
-
 .button {
   width: fit-content;
   text-decoration: none;
@@ -76,6 +72,7 @@ main {
   border-color: #FFF5EA;
   border-radius: 4px;
   transition: all 0.2s;
+  text-align: center;
 }
 
 .button:hover {
@@ -115,7 +112,7 @@ main {
   height: 50px;
   border-radius: 10px;
   position: fixed;
-  right: 50px;
+  right: 20px;
   bottom: 90px;
   z-index: 1000;
   text-align: center;
@@ -179,7 +176,7 @@ footer {
   -moz-transform: translate(0px, -5px);
 }
 
-@media (max-width: 980px) {
+@media (max-width: 1134px) {
   .footer_info {
     display: flex;
     flex-direction: column;
@@ -196,6 +193,11 @@ footer {
   }
   footer {
     height: 170px;
+  }
+}
+@media (max-width: 500px) {
+  footer {
+    height: 220px;
   }
 }
 form .row {
@@ -725,16 +727,6 @@ input::placeholder {
   overflow: visible;
 }
 
-@media (max-height: 1200px) {
-  .hero {
-    height: fit-content !important;
-  }
-}
-@media (max-height: 1200px) {
-  .hero {
-    height: calc(100vh - 70px);
-  }
-}
 .hero {
   display: flex;
   justify-content: start;
@@ -746,6 +738,7 @@ input::placeholder {
 .hero video {
   z-index: -100;
   width: 100%;
+  height: fit-content;
 }
 
 .content {
@@ -825,6 +818,16 @@ input::placeholder {
   background-color: #0b0b0b;
 }
 
+@media (max-width: 1200px) {
+  .hero {
+    height: fit-content;
+  }
+}
+@media (min-width: 1200px) {
+  .hero {
+    height: calc(100vh - 70px);
+  }
+}
 @media (max-width: 769px) {
   .mycards {
     display: flex;
@@ -877,16 +880,14 @@ input::placeholder {
 }
 
 .grid_container {
-  padding-top: 9px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 750px;
+  grid-template-rows: 620px;
   gap: 5px;
-  height: 600px;
 }
 
 .grid_item {
-  height: 600px;
   border: 3px solid black;
   background-size: cover;
   background-position: center;
@@ -977,7 +978,7 @@ input::placeholder {
   }
 }
 .slide-in-top {
-  animation: slide-in-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-in-top 0.75s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
 @media (max-width: 1425px) {
