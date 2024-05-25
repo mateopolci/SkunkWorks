@@ -105,6 +105,11 @@
         font-size: 30px;
     }
 }
+@media (max-width:600px){
+    .p_container{
+        font-size: 12px;
+    }
+}
 @media (max-width:515px){
     .specs{
         display: none;

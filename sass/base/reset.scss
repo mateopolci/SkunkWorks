@@ -3,10 +3,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-::selection{
-    background-color: $signature_white;
-    color: $signature_color;
-}
 a{
     text-decoration: none;
     color: $signature_black;
@@ -14,8 +10,16 @@ a{
 body{
     font-family: "Montserrat", sans-serif;
     scroll-behavior: smooth;
+}
+main{
     overflow-x: hidden;
 }
-#exampleCheck1{
-    box-shadow:none;
+::selection{
+    background-color: $signature_white;
+    color: $signature_color;
+}
+
+::scrollbar-thumb{
+    color: $signature_color;
+    
 }
