@@ -1,6 +1,7 @@
 .scrollerContainer{
     display: flex;
     justify-content: center;
+    background-color: black;
 }
 .main__action .main__scroll-box {
     animation: scroll-down 1.75s infinite;
@@ -20,16 +21,5 @@
     70% {
         transform: translateY(-1rem);
         opacity: 0;
-    }
-}
-@media(max-width: 550px){
-    .scrollerContainerServices{
-        display: none;
-    }
-    .item4::after{
-        content: "Learn more about our services below";
-    }
-    .grid_container{
-        margin-bottom: 50px;
     }
 }

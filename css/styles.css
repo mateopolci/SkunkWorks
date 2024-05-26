@@ -63,18 +63,6 @@ main {
   color: rgb(0, 133, 208);
 }
 
-@media (hover: none) {
-  a:hover, .button:hover, .border_item:hover, .float:hover, .nav-link-button:hover {
-    background-color: initial;
-    color: initial;
-  }
-}
-@media (max-width: 1024px) {
-  a:hover, .button:hover, .border_item:hover, .float:hover, .nav-link-button:hover {
-    background-color: initial;
-    color: initial;
-  }
-}
 .button {
   width: fit-content;
   text-decoration: none;
@@ -96,6 +84,7 @@ main {
 .scrollerContainer {
   display: flex;
   justify-content: center;
+  background-color: black;
 }
 
 .main__action .main__scroll-box {
@@ -118,17 +107,6 @@ main {
   70% {
     transform: translateY(-1rem);
     opacity: 0;
-  }
-}
-@media (max-width: 550px) {
-  .scrollerContainerServices {
-    display: none;
-  }
-  .item4::after {
-    content: "Learn more about our services below";
-  }
-  .grid_container {
-    margin-bottom: 50px;
   }
 }
 .top {
@@ -379,6 +357,22 @@ form .row {
   background-color: #FFF5EA;
 }
 
+@media (max-width: 1024px) {
+  .button:hover {
+    color: #FFF5EA;
+    background-color: rgb(0, 133, 208);
+  }
+  .border_item:hover::before {
+    transform: scaleX(0);
+  }
+  .border_item:hover::after {
+    transform: scaleY(0);
+  }
+  .nav-link-button:hover {
+    background-color: #0b0b0b !important;
+    color: #FFF5EA !important;
+  }
+}
 .vehicles_main {
   background-color: #0b0b0b;
   color: #FFF5EA;
@@ -762,6 +756,10 @@ input::placeholder {
   color: grey !important;
 }
 
+.iframe_map {
+  filter: invert(90%);
+}
+
 @media (max-width: 566px) {
   #checkbox_label {
     width: 280px;
@@ -884,6 +882,9 @@ input::placeholder {
   .mycard {
     width: 100%;
   }
+  .cards-title {
+    font-size: 25px;
+  }
 }
 @media (max-width: 580px) {
   .hero .content h1 {
@@ -894,15 +895,13 @@ input::placeholder {
     font-size: 20px;
   }
   .h2-container .cards-title {
-    font-size: 35px;
+    font-size: 20px;
+  }
+  .mycard {
+    height: 300px;
   }
   .mycard .mycardTitle {
     font-size: 25px;
-  }
-}
-@media (max-width: 430px) {
-  .h2-container .cards-title {
-    font-size: 30px;
   }
 }
 @media (max-width: 384px) {
@@ -911,11 +910,20 @@ input::placeholder {
     margin-bottom: 10px;
   }
   .h2-container .cards-title {
+    font-size: 15px;
+  }
+  .mycard {
+    height: 200px;
+  }
+  .mycard .mycardTitle {
     font-size: 20px;
+  }
+  .mycard .button {
+    font-size: 15px;
   }
 }
 .main_services {
-  background-color: #0b0b0b;
+  background-color: black;
   color: #FFF5EA;
 }
 
@@ -1072,6 +1080,11 @@ input::placeholder {
     height: 200px;
   }
 }
+@media (max-width: 800px) {
+  .service_horizontal_card {
+    padding-top: 7px;
+  }
+}
 @media (max-width: 771px) {
   .grid_container {
     padding-top: 0px;
@@ -1085,16 +1098,38 @@ input::placeholder {
     height: 200px;
   }
   .service_horizontal_card h3 {
-    font-size: 15px;
+    font-size: 20px;
     margin: 25px;
   }
   .services_title {
     font-size: 35px;
   }
-}
-@media (max-width: 460px) {
   .service_horizontal_card p {
     font-size: 12px;
+  }
+  .grid_container {
+    grid-template-rows: 250px;
+  }
+  .grid_container p {
+    font-size: 25px;
+  }
+  .grid_item .button {
+    width: 130px;
+    height: 40px;
+    font-size: 20px;
+  }
+  .service_horizontal_card .button {
+    width: 180px;
+    height: 40px;
+    font-size: 20px;
+  }
+  .service_horizontal_card .button--stretched {
+    width: 310px;
+  }
+}
+@media (max-width: 380px) {
+  .services_title {
+    font-size: 25px;
   }
 }
 

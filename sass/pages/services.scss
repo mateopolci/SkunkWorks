@@ -1,5 +1,5 @@
 .main_services{
-    background-color: $signature_black;
+    background-color: black;
     color: $signature_white;
 }
 .services_title {
@@ -155,6 +155,11 @@
         }
     }
 }
+@media (max-width: 800px){
+    .service_horizontal_card{
+        padding-top: 7px;
+    }
+}
 @media (max-width: 771px) {
     .grid_container {
         padding-top: 0px;
@@ -170,18 +175,44 @@
             height: 200px;
         }
         h3 {
-            font-size: 15px;
+            font-size: 20px;
             margin: 25px;
         }
     }
     .services_title {
         font-size: 35px;
     }
-}
-@media (max-width: 460px){
     .service_horizontal_card{
         p{
             font-size: 12px;
         }
+    }
+    .grid_container{
+        grid-template-rows: 250px;
+        p{
+            font-size: 25px;
+        }
+    }
+    .grid_item{
+        .button{
+            width: 130px;
+            height: 40px;
+            font-size: 20px;
+        }
+    }
+    .service_horizontal_card{
+        .button{
+            width: 180px;
+            height: 40px;
+            font-size: 20px;
+        }
+        .button--stretched{
+            width: 310px;
+        }
+    }
+}
+@media(max-width: 380px){
+    .services_title{
+        font-size: 25px;
     }
 }

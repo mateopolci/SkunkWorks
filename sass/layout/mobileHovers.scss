@@ -1,0 +1,17 @@
+//Disable :hovers on mobile
+@media (max-width: 1024px){
+    .button:hover{
+        color: $signature_white; 
+        background-color: $signature_color;
+    }
+    .border_item:hover::before {
+        transform: scaleX(0);
+    }
+    .border_item:hover::after {
+        transform: scaleY(0);
+    }
+    .nav-link-button:hover{
+        background-color: $signature_black !important;
+        color: $signature_white !important;
+    }
+}

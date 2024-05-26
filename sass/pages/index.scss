@@ -103,6 +103,9 @@
     .mycard{
         width: 100%;
     }
+    .cards-title{
+        font-size: 25px;
+    }
 }
 @media (max-width:580px){
     .hero .content h1{
@@ -113,17 +116,13 @@
         font-size: 20px;
     }
     .h2-container .cards-title{
-        font-size: 35px;
+        font-size: 20px;
     }
     .mycard{
+        height: 300px;
         .mycardTitle{ 
             font-size: 25px;
         }
-    }
-}
-@media (max-width:430px){
-    .h2-container .cards-title{
-        font-size: 30px;
     }
 }
 @media (max-width:384px){
@@ -132,6 +131,16 @@
         margin-bottom: 10px;
     }
     .h2-container .cards-title{
-        font-size: 20px;
+        font-size: 15px;
     }
+    .mycard{
+        height: 200px;
+        .mycardTitle{ 
+            font-size: 20px;
+        }
+        .button{
+            font-size: 15px;
+        }
+    }
+
 }

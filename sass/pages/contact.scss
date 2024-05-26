@@ -63,6 +63,9 @@ input{
 input::placeholder{
     color: grey !important;
 }
+.iframe_map{
+    filter: invert(90%);
+}
 @media(max-width: 566px){
     #checkbox_label{
         width: 280px;
