@@ -48,27 +48,27 @@
         <form action="https://formsubmit.co/mateopolci3@gmail.com" method="POST">
                 <div class="myform row">
                     <div class="m-3 col-6">
-                        <input type="text" name="name" class="form-control" placeholder="Name">
+                        <input type="text" name="name" class="form-control" placeholder="Name" required>
                     </div>
                 </div>    
                 <div class="myform row">
                     <div class="m-3 col-6">
-                        <input type="text" name="surname" class="form-control" placeholder="Surname">
+                        <input type="text" name="surname" class="form-control" placeholder="Surname" required>
                     </div>
                 </div>
                 <div class="myform row">
                     <div class="m-3 col-6">
-                        <input type="email" name="email" class="form-control" id="email" placeholder="E-mail">
+                        <input type="email" name="email" class="form-control" id="email" placeholder="E-mail" required>
                     </div>
                 </div>
                 <div class="myform row">
                     <div class="m-3 col-6">
-                        <input type="number" name="phone" class="form-control" placeholder="Phone number">
+                        <input type="number" name="phone" class="form-control" placeholder="Phone number" required>
                     </div>
                 </div>
             <div class="mydropdown">
                 <select class="form-select" name="topic" aria-label="Default select example">
-                    <option selected>Select a message topic</option>
+                    <option selected>Unspecified topic</option>
                     <option value="1">Rocket R</option>
                     <option value="2">Rocket 1000</option>
                     <option value="3">Skunk 820</option>
@@ -83,7 +83,7 @@
                 </div>
                 <div class="m-3 mytextarea col-6">
                     <label for="exampleFormControlTextarea1" class="form-label">What can we help you with?</label>
-                    <textarea class="form-control" name="text" id="exampleFormControlTextarea1" rows="6"></textarea>
+                    <textarea class="form-control" name="text" id="exampleFormControlTextarea1" rows="6" required></textarea>
                 </div>
                 <button type="submit" class="btn mb-5 button">Submit</button>
             </div>

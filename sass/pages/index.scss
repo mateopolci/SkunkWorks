@@ -61,8 +61,10 @@
     h2{
         margin-top: 20px;
         color: $signature_white;
-        text-shadow: 3px 3px 3px black;
+        text-shadow: -3px 3px 3px black;
         font-size: 35px;
+        z-index: 100000;
+        position: relative;
     }
     a{
         margin-top: 50px;

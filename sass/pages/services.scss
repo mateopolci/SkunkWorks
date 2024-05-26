@@ -102,23 +102,16 @@
     animation: slide-in-top 0.75s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
+@media (max-width: 1500px) {
+    .grid_container {
+        grid-template-rows: 450px;
+    }
+}
 @media (max-width: 1425px) {
     .service_horizontal_card {
         video {
             height: 400px;
         }
-    }
-}
-@media (max-width: 950px) {
-    .service_horizontal_card {
-        video {
-            height: 200px;
-        }
-    }
-}
-@media (max-width: 1500px) {
-    .grid_container {
-        grid-template-rows: 450px;
     }
 }
 @media (max-width: 1400px) {
@@ -155,6 +148,13 @@
         }
     }
 }
+@media (max-width: 950px) {
+    .service_horizontal_card {
+        video {
+            height: 200px;
+        }
+    }
+}
 @media (max-width: 771px) {
     .grid_container {
         padding-top: 0px;
@@ -162,7 +162,7 @@
     .services_title {
         font-size: 40px;
     }
-
+    
 }
 @media (max-width: 480px) {
     .service_horizontal_card {

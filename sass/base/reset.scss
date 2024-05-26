@@ -18,7 +18,7 @@ main{
     background-color: $signature_white;
     color: $signature_color;
 }
-@media (hover: none) {
+@media (max-width: 1024px) {
     a:hover, .button:hover, .border_item:hover, .float:hover, .nav-link-button:hover{
         background-color: initial;
         color: initial;
