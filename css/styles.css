@@ -647,6 +647,9 @@ form .row {
   .specs_data {
     font-size: 30px;
   }
+  .button_container .button {
+    font-size: 20px;
+  }
 }
 @media (max-width: 600px) {
   .p_container {
