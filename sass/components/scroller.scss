@@ -22,3 +22,14 @@
         opacity: 0;
     }
 }
+@media(max-width: 550px){
+    .scrollerContainerServices{
+        display: none;
+    }
+    .item4::after{
+        content: "Learn more about our services below";
+    }
+    .grid_container{
+        margin-bottom: 50px;
+    }
+}

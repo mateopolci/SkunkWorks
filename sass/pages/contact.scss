@@ -63,3 +63,8 @@ input{
 input::placeholder{
     color: grey !important;
 }
+@media(max-width: 566px){
+    #checkbox_label{
+        width: 280px;
+    }
+}
